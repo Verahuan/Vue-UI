@@ -1,21 +1,14 @@
+<!-- 单文件组件 -->
 <template>
 	<div>
-		<button @click=$emit("eventclick") class="g-button">按钮{{count}}</button>
-		<p>zzz{{post.id}}</p>
+		<button class="g-button">按钮+</button>
 	</div>
 	
 </template>
 
 <script>
 	export default{
-		props:[
-			"post"
-		],
-		data:function(){
-			return{
-				count:0
-			}
-		}
+		
 	}
 </script>
 <style lang="scss">
