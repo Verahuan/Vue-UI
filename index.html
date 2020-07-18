@@ -37,19 +37,20 @@
 	<body>
 		<div id="app">
 			<div class="button">
-				<p>按钮组件，可以切换图标、文字、样式</p>
-				<g-button icon="setting">设置</g-button>
-				<g-button icon-position="left" icon="thumbs-up">点赞</g-button>
+				<p>按钮组件，可以切换图标、文字、样式,点击可显示加载状态</p>
+				<g-button icon="setting">设置</g-button>				
 				<g-button icon-position="left" icon="download">下载</g-button>
 				<g-button icon-position="left" icon="right">向右</g-button>
 				<g-button icon-position="right" icon="left">向左</g-button>
 				<g-button icon-position="right" icon="up">向上</g-button>
 				<g-button icon-position="right" icon="down">向下</g-button>
+				<g-button icon-position="left" :loading="true" icon="thumbs-up">点赞</g-button>
+				<g-button :loading="true">加载</g-button>
 			</div>
 
 		</div>
 		<script src="./src/app.js"></script>
-		<script src="//at.alicdn.com/t/font_1951909_nqddp3gnro.js">
+		<script src="//at.alicdn.com/t/font_1951909_qwkhghjsxff.js">
 		</script>
 	</body>
 </html>
