@@ -12691,7 +12691,7 @@ exports.default = _default;
             return _vm.$emit("change", $event)
           },
           input: function($event) {
-            return _vm.$emit("input", $event)
+            return _vm.$emit("input", $event.target.value)
           },
           blur: function($event) {
             return _vm.$emit("blur", $event)
@@ -12766,7 +12766,9 @@ _vue.default.component("g-input", _input.default);
 
 new _vue.default({
   el: "#app",
-  data: {},
+  data: {
+    message: "我是message"
+  },
   methods: {
     change: function change(e) {
       console.log(Number(e.target.value));

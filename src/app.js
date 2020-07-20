@@ -9,7 +9,9 @@ Vue.component("g-input", Input)
 
 new Vue({
 	el: "#app",
-	data: {},
+	data: {
+		message:"我是message"
+	},
 	methods:{
 		change:function(e){
 			console.log(Number(e.target.value))

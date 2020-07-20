@@ -5,7 +5,7 @@
 	<div class="wrapper" :class="{error}">
 		<input type="text" :value="value" :disabled="disabled" :readonly="readonly" 
 		@change="$emit('change',$event)"
-		@input="$emit('input',$event)"
+		@input="$emit('input',$event.target.value)"
 		@blur="$emit('blur',$event)"
 		@focus="$emit('focus',$event)"
 		>

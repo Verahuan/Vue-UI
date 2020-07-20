@@ -49,8 +49,9 @@
 				<g-button :loading="true">加载</g-button>
 			</div>
 			<div class="input">
-				<p class="intro">文本输入框</p>
-				<g-input value="请输入值" @change="change"></g-input>
+				<p class="intro">文本输入框,支持hange input blur foucs事件</p>
+				<p style="margin-bottom: 20px">双向绑定显示：{{message}}</p>
+				<g-input value="请输入值" @change="change" v-model="message"></g-input>
 				<g-input value="只读" readonly></g-input>
 				<g-input value="不可输入" disabled></g-input>
 				<g-input value="请输入数值"  error="输入错误"></g-input>
