@@ -6,7 +6,6 @@
   "scripts": {
 	"dev-test":"parcel watch test/* --no-cache & karma start",
 	"test":"parcel build test/* --no-cache --no-minify && karma start --single-run"
-
   },
   "repository": {
     "type": "git",
@@ -16,7 +15,7 @@
     "vue",
     "ui"
   ],
-  "author": "verahuan",
+  "author": "verahuan", 
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Verahuan/Vue-UI-/issues"

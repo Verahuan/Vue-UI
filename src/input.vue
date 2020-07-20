@@ -1,7 +1,14 @@
 <!-- 普通样式 disabled focus hover error susscess -->
+<!-- input的事件 change input blur foucs-->
+
 <template>
 	<div class="wrapper" :class="{error}">
-		<input type="text" :value="value" :disabled="disabled" :readonly="readonly">
+		<input type="text" :value="value" :disabled="disabled" :readonly="readonly" 
+		@change="$emit('change',$event)"
+		@input="$emit('input',$event)"
+		@blur="$emit('blur',$event)"
+		@focus="$emit('focus',$event)"
+		>
 		<template v-if="error" >
 			<g-icon icon="wrong"></g-icon><span class="icon">{{error}}</span>
 		</template>
