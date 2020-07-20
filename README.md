@@ -10,7 +10,7 @@
 因为目前这个库还在完善中，存在一些CSS样式的问题，所以希望小主在使用过程中自己设置一下~
 使用本组件需要开启border-box
 ---
-*{box-sizing:border-box}
+     *{box-sizing:border-box}
 ---
 IE8 及以上的浏览器都支持该设置
 =>
@@ -27,15 +27,15 @@ IE8 及以上的浏览器都支持该设置
 			}
 ---
 IE 15 及以上浏览器都支持此样式
-
 Script 引入svg图片
 ---
-<script src="//at.alicdn.com/t/font_1951909_qwkhghjsxff.js">
+
+        <script src="//at.alicdn.com/t/font_1951909_qwkhghjsxff.js">
 ---
 
  ### 2.开始安装
  ---
- 	npm i --save vue-ui-verahuan-test
+ 	 npm i --save vue-ui-verahuan-test
  ---
 ## 文档
 
