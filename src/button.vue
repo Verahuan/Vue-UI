@@ -39,7 +39,7 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	@-webkit-keyframes spin{
 		0%{ transform: rotate(0deg);}
 		100%{transform:rotate(360deg);}
