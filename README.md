@@ -29,7 +29,6 @@ IE8 及以上的浏览器都支持该设置
 IE 15 及以上浏览器都支持此样式
 Script 引入svg图片
 ---
-
         <script src="//at.alicdn.com/t/font_1951909_qwkhghjsxff.js">
 ---
 
@@ -38,6 +37,7 @@ Script 引入svg图片
  	 npm i --save vue-ui-verahuan-test
  ---
 ## 文档
+grid组件，可以通过设置span参数 自行进行设置同行的不同列对比
 
 ## 提问
 

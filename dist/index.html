@@ -26,7 +26,8 @@
 				width: 1em;
 				height: 1em;
 			}
-			.intro{
+
+			.intro {
 				margin-top: 20px;
 				margin-bottom: 20px;
 			}</style>
@@ -35,7 +36,7 @@
 		<div id="app">
 			<div class="button">
 				<p class="intro">按钮组件，可以切换图标、文字、样式,点击可显示加载状态</p>
-				<g-button icon="setting">设置</g-button>				
+				<g-button icon="setting">设置</g-button>
 				<g-button icon-position="left" icon="download">下载</g-button>
 				<g-button icon-position="left" icon="right">向右</g-button>
 				<g-button icon-position="right" icon="left">向左</g-button>
@@ -52,8 +53,27 @@
 				<g-input value="不可输入" disabled=""></g-input>
 				<g-input value="请输入数值" error="输入错误"></g-input>
 			</div>
-			<div id="test"></div> 
-			<div id="text"></div> 
+			<div class="grid">
+				<p class="intro">栅格布局无gutter,通过添加"g-col"的数量，进行任意列数的添加，行数添加通过增加"g-row"</p>
+				<g-row gutter="20">
+					<g-col>
+						<div style="width:100%;height:100%; background-color: pink;"> 填充内容</div>
+					</g-col>
+					<g-col></g-col>
+					<g-col></g-col>
+					<g-col></g-col>
+				</g-row>
+				<g-row gutter="20">
+					<g-col span="2"></g-col>
+					<g-col span="20" offset="2"></g-col>
+				</g-row>
+				<g-row gutter="20">
+					<g-col span="20"></g-col>
+					<g-col span="2" offset="2"></g-col>
+				</g-row>
+			</div>
+			<div id="test"></div>
+			<div id="text"></div>
 
 		</div>
 		<script src="/app.a6a4d504.js"></script>
