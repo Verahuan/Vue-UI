@@ -60,7 +60,12 @@
 			<div class="grid">
 				<p class="intro">栅格布局无gutter,通过添加"g-col"的数量，进行任意列数的添加，行数添加通过增加"g-row"</p>
 				<g-row gutter="20">
-					<g-col >
+					<g-col 
+					:phone="{span:8}"
+					:ipad="{span:14}"
+					:pc="{span:20}"
+					:xpc="{span:24}"
+					>
 						<div style="width:100%;height:100%; background-color: pink;"> 填充内容</div>
 					</g-col>
 					<g-col ></g-col>
