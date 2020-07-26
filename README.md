@@ -37,7 +37,12 @@ Script 引入svg图片
  	 npm i --save vue-ui-verahuan-test
  ---
 ## 文档
-grid组件，可以通过设置span参数 自行进行设置同行的不同列对比
+### button组件
+### input组件
+### grid组件
+  可以通过设置span参数 自行进行设置同行的不同列对比
+### toast组件
+   参考Framework7的toast组件进行设计，完成弹出toast/多个toast/并且可以在toast之后执行回调函数
 
 ## 提问
 
