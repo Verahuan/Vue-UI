@@ -17,6 +17,7 @@
 =>
 ### 目前还需要您亲自设置一下默认颜色等变量哦~(我后续就会改为SCSS变量啦,我会加油的！)
 ---
+```
 html {
 	--button-height: 40px;
 	--font-size: 14px;
@@ -26,6 +27,7 @@ html {
 	--border-color: #999;
 	--color: #333;
 }
+```
 ---
 ### IE 15 及以上浏览器都支持此样式
 ### script 引入svg图片
@@ -73,7 +75,7 @@ html {
 ```
  ---
 ## 文档(待完善)
-### button组件
+ button组件
 ### ![](README_files/2.jpg)
 ---
 可绑定参数：
@@ -85,16 +87,16 @@ html {
 			type:Boolean,
 			default:false				
 		}
-}
+		}
 ```
-1.icon类型：setting download right left up down thumbs-up
-2.iconPosition:left right
-3.loading: true false
+### 1.icon类型：setting download right left up down thumbs-up
+### 2.iconPosition:left right
+### 3.loading: true false
 ---
-### input组件
-### grid组件
+## input组件
+## grid组件
   可以通过设置span参数 自行进行设置同行的不同列对比
-### toast组件
+## toast组件
    参考Framework7的toast组件进行设计，完成弹出toast/多个toast/并且可以在toast之后执行回调函数
 ## 提问
 
