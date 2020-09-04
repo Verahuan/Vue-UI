@@ -1,12 +1,32 @@
 <template>
-	<div class="toast">
+	<div class="toast" v-show="isShow">
 		<slot></slot>
 	</div>
 </template>
 
-<script>
+<script> 
 	export default{
-		name:"GuluToast"
+		name:"GuluToast",
+		props:{
+			message:" ",
+			time:Number
+		},
+		data() {
+		  return {
+		    message: '',
+		    isShow: false
+		  }
+		},
+		methods: {
+		  show(message='默认文字', time=2000) {
+		    this.message = message
+		    this.isShow = true
+		    setTimeout(() => {
+		      this.isShow = false
+		      this.message = ''
+		    },time)
+		  }
+		}
 	}
 </script>
 
